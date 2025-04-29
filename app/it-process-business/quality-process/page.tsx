@@ -8,33 +8,33 @@ import { ChatPopup } from "@/components/chat-popup"
 import { FAQSection } from "@/components/faq-section"
 import { SectionHeader } from "@/components/section-header"
 
-export default function ITProcessBusinessPage() {
+export default function QualityAndProcessImprovementPage() {
   // FAQ data with required id field
   const faqs = [
     {
-      id: "it-cert-1",
-      question: "What IT certifications do you offer?",
-      answer: "We offer a comprehensive range of IT certifications including ITIL 4, COBIT, ISO 20000, TOGAF, PRINCE2, PMP, SAFe, Six Sigma, Lean Six Sigma, Agile methodologies, DevOps, and various security certifications like ISO 27001, CISA, CISM, and CISSP.",
+      id: "quality-cert-1",
+      question: "What certifications do you offer in Quality and Process Improvement?",
+      answer: "We offer a variety of certifications including Six Sigma, Lean Six Sigma, Kaizen, CMMI, and ISO 9001.",
     },
     {
-      id: "it-cert-2",
+      id: "quality-cert-2",
       question: "How long does it take to complete a certification program?",
-      answer: "The duration varies by certification. Foundation level courses typically take 2-3 days, while practitioner or advanced levels may take 3-5 days. Preparation time for exams varies based on your experience and background. We offer flexible learning options to accommodate your schedule.",
+      answer: "The duration varies by certification. Most foundation courses take 2-3 days, while advanced levels may take longer. We provide flexible learning options.",
     },
     {
-      id: "it-cert-3",
+      id: "quality-cert-3",
       question: "Are your certification programs recognized globally?",
-      answer: "Yes, all our certification programs are internationally recognized and accredited by the respective governing bodies. Our training partners are authorized training providers for all the certifications we offer.",
+      answer: "Yes, all our certification programs are internationally recognized and accredited by the respective governing bodies.",
     },
     {
-      id: "it-cert-4",
+      id: "quality-cert-4",
       question: "Do you provide exam vouchers with the training?",
-      answer: "Yes, most of our certification packages include exam vouchers. We also offer exam preparation materials, practice tests, and post-training support to ensure you're fully prepared for your certification exam.",
+      answer: "Yes, most of our certification packages include exam vouchers along with preparation materials.",
     },
     {
-      id: "it-cert-5",
+      id: "quality-cert-5",
       question: "Can I get training for my entire team or organization?",
-      answer: "We offer corporate training packages that can be customized to meet your organization's specific needs. We can deliver training on-site at your location or virtually, depending on your preference.",
+      answer: "Yes, we offer corporate training packages that can be customized to meet your organization's specific needs.",
     },
   ]
 
@@ -84,10 +84,10 @@ export default function ITProcessBusinessPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-              Transform Your IT Career with Industry-Recognized Certifications
+              Enhance Your Skills with Quality and Process Improvement Certifications
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Master IT governance, project management, and digital transformation with our expert-led programs
+              Master the methodologies that drive quality and efficiency in your organization.
             </p>
             <Button
               size="lg"
@@ -99,25 +99,23 @@ export default function ITProcessBusinessPage() {
         </div>
       </section>
 
-      {/* Certification Categories */}
+      {/* Quality & Process Improvement Categories */}
       <section className="relative z-10 py-24 bg-black/50 backdrop-blur-sm">
         <div className="container mx-auto px-4">
-          <SectionHeader title="IT Service Management & Governance" colorClass="cyan" id="it-service-management" />
+          <SectionHeader title="Quality & Process Improvement Certifications" colorClass="cyan" id="quality-process-improvement" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {/* ITIL 4 */}
+            {/* Six Sigma */}
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
               <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                ITIL 4 Certification Path
+                Six Sigma Certification
               </h4>
-              <p className="text-gray-400 mb-4">
-                Master the world's leading framework for IT service management and digital transformation.
-              </p>
+              <p className="text-gray-400 mb-4">Learn the Six Sigma methodology for process improvement.</p>
               <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>ITIL 4 Foundation</li>
-                <li>ITIL 4 Specialist Modules</li>
-                <li>ITIL 4 Strategist</li>
-                <li>ITIL 4 Leader</li>
+                <li>Six Sigma Yellow Belt</li>
+                <li>Six Sigma Green Belt</li>
+                <li>Six Sigma Black Belt</li>
+                <li>Six Sigma Master Black Belt</li>
               </ul>
               <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
                 Learn More
@@ -133,18 +131,15 @@ export default function ITProcessBusinessPage() {
               </Link>
             </div>
 
-            {/* COBIT */}
+            {/* Lean Six Sigma */}
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
               <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                COBIT Certification Path
+                Lean Six Sigma Certification
               </h4>
-              <p className="text-gray-400 mb-4">
-                Develop expertise in IT governance and enterprise IT management with COBIT.
-              </p>
+              <p className="text-gray-400 mb-4">Optimize processes and improve quality with Lean Six Sigma.</p>
               <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>COBIT Foundation</li>
-                <li>COBIT Design & Implementation</li>
-                <li>COBIT Assessor</li>
+                <li>Lean Six Sigma Green Belt</li>
+                <li>Lean Six Sigma Black Belt</li>
               </ul>
               <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
                 Learn More
@@ -160,51 +155,15 @@ export default function ITProcessBusinessPage() {
               </Link>
             </div>
 
-            {/* ISO 20000 */}
+            {/* Kaizen */}
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
               <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                ISO 20000 Certification Path
+                Kaizen Certification
               </h4>
-              <p className="text-gray-400 mb-4">Learn the international standard for IT service management systems.</p>
+              <p className="text-gray-400 mb-4">Embrace continuous improvement with Kaizen methodologies.</p>
               <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>ISO 20000 Foundation</li>
-                <li>ISO 20000 Practitioner</li>
-                <li>ISO 20000 Auditor</li>
-              </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Project & Program Management Section */}
-      <section className="relative z-10 py-24" id="project-management">
-        <div className="container mx-auto px-4">
-          <SectionHeader title="Project & Program Management" colorClass="cyan" id="project-management" />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {/* PRINCE2 */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
-              <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                PRINCE2 Certification Path
-              </h4>
-              <p className="text-gray-400 mb-4">Master the world's most widely adopted project management method.</p>
-              <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>PRINCE2 Foundation</li>
-                <li>PRINCE2 Practitioner</li>
-                <li>PRINCE2 Agile® Foundation</li>
-                <li>PRINCE2 Agile® Practitioner</li>
+                <li>Kaizen Foundation</li>
+                <li>Kaizen Practitioner</li>
               </ul>
               <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
                 Learn More
@@ -220,19 +179,15 @@ export default function ITProcessBusinessPage() {
               </Link>
             </div>
 
-            {/* PMP */}
+            {/* CMMI */}
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
               <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                PMP Certification Program
+                CMMI Certification
               </h4>
-              <p className="text-gray-400 mb-4">
-                Prepare for the globally recognized Project Management Professional certification.
-              </p>
+              <p className="text-gray-400 mb-4">Learn the Capability Maturity Model Integration for process improvement.</p>
               <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>PMP Exam Preparation</li>
-                <li>35 Contact Hours Certificate</li>
-                <li>Practice Exams & Simulations</li>
-                <li>Application Assistance</li>
+                <li>CMMI Foundation</li>
+                <li>CMMI Assessor</li>
               </ul>
               <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
                 Learn More
@@ -248,19 +203,15 @@ export default function ITProcessBusinessPage() {
               </Link>
             </div>
 
-            {/* SAFe */}
+            {/* ISO 9001 */}
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
               <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                SAFe Certification Path
+                ISO 9001 Certification
               </h4>
-              <p className="text-gray-400 mb-4">
-                Learn the Scaled Agile Framework for enterprise-scale agile development.
-              </p>
+              <p className="text-gray-400 mb-4">Understand the requirements for a quality management system.</p>
               <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>SAFe Agilist (Leading SAFe)</li>
-                <li>SAFe Scrum Master</li>
-                <li>SAFe Product Owner/Manager</li>
-                <li>SAFe Advanced Scrum Master</li>
+                <li>ISO 9001 Foundation</li>
+                <li>ISO 9001 Lead Auditor</li>
               </ul>
               <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
                 Learn More
@@ -288,8 +239,7 @@ export default function ITProcessBusinessPage() {
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800">
               <h4 className="text-lg font-bold mb-3 text-white">Accredited Training</h4>
               <p className="text-gray-400">
-                All our courses are delivered by accredited training partners recognized by official certification
-                bodies.
+                All our courses are delivered by accredited training partners recognized by official certification bodies.
               </p>
             </div>
 
@@ -321,7 +271,7 @@ export default function ITProcessBusinessPage() {
       <section className="relative z-10 py-16">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto bg-gradient-to-r from-gray-900 to-gray-800 p-8 md:p-12 rounded-2xl border border-gray-800">
-            <h2 className="text-3xl font-bold mb-4 text-white">Ready to certify your skills?</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white">Ready to enhance your skills?</h2>
             <p className="text-gray-300 mb-8">
               Take the first step toward advancing your career with our industry-recognized certification programs.
             </p>
@@ -344,8 +294,8 @@ export default function ITProcessBusinessPage() {
         titleClassName="text-cyan-400"
         triggerClassName="hover:text-cyan-400"
         viewAllLink={{
-          href: "/faq#it-process-business",
-          text: "View all IT certification FAQs",
+          href: "/faq#quality-process-improvement",
+          text: "View all Quality and Process Improvement FAQs",
           className: "text-cyan-400 hover:text-cyan-300"
         }}
       />

@@ -31,10 +31,10 @@ export function NavMenu() {
                   Master IT governance, project management, and digital transformation with our expert-led programs.
                 </p>
                 <ul className="grid gap-3">
-                  <ListItem title="IT Service Management & Governance" href="/it-process-business/it-service" />
-                  <ListItem title="Project & Program Management" href="/it-process-business/project-program" />
-                  <ListItem title="Quality & Process Improvement" href="/it-process-business/quality-process" />
-                  <ListItem title="Risk & Security Management" href="/it-process-business/risk-security" />
+                  <ListItem title="IT Service Management & Governance" href="/it-process-business" />
+                  <ListItem title="Project & Program Management" href="/it-process-business" />
+                  <ListItem title="Quality & Process Improvement" href="/it-process-business" />
+                  <ListItem title="Risk & Security Management" href="/it-process-business" />
                 </ul>
                 <div className="mt-4 pt-4 border-t border-gray-800">
                   <Link
@@ -64,7 +64,7 @@ export function NavMenu() {
                   Master in-demand tech and finance skills to launch or advance your career in these high-growth fields.
                 </p>
                 <ul className="grid gap-3">
-                  <ListItem title="IT & Development" href="/tech-finance/it-dev" />
+                  <ListItem title="IT & Development" href="/tech-finance" />
                   <ListItem title="Finance & Analytics" href="/tech-finance" />
                 </ul>
                 <div className="mt-4 pt-4 border-t border-gray-800">
@@ -95,9 +95,9 @@ export function NavMenu() {
                   Develop critical HR expertise and leadership capabilities for organizational success.
                 </p>
                 <ul className="grid gap-3">
-                  <ListItem title="Behavioral Training" href="/human-capital/behavioral" />
-                  <ListItem title="HR Professional Development" href="/human-capital/hr-professional" />
-                  <ListItem title="Leadership Development" href="/human-capital/leadership-dev" />
+                  <ListItem title="Behavioral Training" href="/human-capital" />
+                  <ListItem title="HR Professional Development" href="/human-capital" />
+                  <ListItem title="Leadership Development" href="/human-capital" />
                 </ul>
                 <div className="mt-4 pt-4 border-t border-gray-800">
                   <Link
@@ -127,10 +127,10 @@ export function NavMenu() {
                   Tailored programs for every career stage - from students to executives.
                 </p>
                 <ul className="grid gap-3">
-                  <ListItem title="Graduate Launch Package" href="/career-development/grad-launch" />
-                  <ListItem title="Career Accelerator Package" href="/career-development/carr-acc" />
-                  <ListItem title="Executive Growth Package" href="/career-development/exec-grow" />
-                  <ListItem title="Career Transition Package" href="/career-development/carr-tran" />
+                  <ListItem title="Graduate Launch Package" href="/career-development" />
+                  <ListItem title="Career Accelerator Package" href="/career-development" />
+                  <ListItem title="Executive Growth Package" href="/career-development" />
+                  <ListItem title="Career Transition Package" href="/career-development" />
                 </ul>
                 <div className="mt-4 pt-4 border-t border-gray-800">
                   <Link

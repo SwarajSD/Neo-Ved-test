@@ -8,33 +8,33 @@ import { ChatPopup } from "@/components/chat-popup"
 import { FAQSection } from "@/components/faq-section"
 import { SectionHeader } from "@/components/section-header"
 
-export default function ITProcessBusinessPage() {
-  // FAQ data with required id field
+export default function BehavioralTrainingPage() {
+  // FAQ data for this section
   const faqs = [
     {
-      id: "it-cert-1",
-      question: "What IT certifications do you offer?",
-      answer: "We offer a comprehensive range of IT certifications including ITIL 4, COBIT, ISO 20000, TOGAF, PRINCE2, PMP, SAFe, Six Sigma, Lean Six Sigma, Agile methodologies, DevOps, and various security certifications like ISO 27001, CISA, CISM, and CISSP.",
+      id: "behavioral-1",
+      question: "What is Behavioral Training?",
+      answer: "Behavioral Training focuses on improving workplace skills such as communication, emotional intelligence, teamwork, and professionalism. It helps individuals and teams enhance their interpersonal skills and work effectively in diverse environments.",
     },
     {
-      id: "it-cert-2",
-      question: "How long does it take to complete a certification program?",
-      answer: "The duration varies by certification. Foundation level courses typically take 2-3 days, while practitioner or advanced levels may take 3-5 days. Preparation time for exams varies based on your experience and background. We offer flexible learning options to accommodate your schedule.",
+      id: "behavioral-2",
+      question: "Who should attend Behavioral Training?",
+      answer: "Behavioral Training is ideal for mid-level professionals, corporate teams, new hires, fresh graduates, managers, and supervisors. It is also beneficial for organizations looking to foster collaboration and emotional intelligence.",
     },
     {
-      id: "it-cert-3",
-      question: "Are your certification programs recognized globally?",
-      answer: "Yes, all our certification programs are internationally recognized and accredited by the respective governing bodies. Our training partners are authorized training providers for all the certifications we offer.",
+      id: "behavioral-3",
+      question: "What topics are covered in Behavioral Training?",
+      answer: "Our Behavioral Training programs cover communication skills, emotional intelligence, collaboration, workplace ethics, stress management, mindfulness, and personal development.",
     },
     {
-      id: "it-cert-4",
-      question: "Do you provide exam vouchers with the training?",
-      answer: "Yes, most of our certification packages include exam vouchers. We also offer exam preparation materials, practice tests, and post-training support to ensure you're fully prepared for your certification exam.",
+      id: "behavioral-4",
+      question: "Can Behavioral Training be customized for my organization?",
+      answer: "Yes, we offer tailored Behavioral Training programs to meet the specific needs of your organization. Whether it's for a small team or a large corporate group, we can design a program that aligns with your goals.",
     },
     {
-      id: "it-cert-5",
-      question: "Can I get training for my entire team or organization?",
-      answer: "We offer corporate training packages that can be customized to meet your organization's specific needs. We can deliver training on-site at your location or virtually, depending on your preference.",
+      id: "behavioral-5",
+      question: "How long does a Behavioral Training program last?",
+      answer: "The duration varies depending on the program. Short workshops can be completed in a day, while comprehensive training programs may span multiple sessions over a few weeks.",
     },
   ]
 
@@ -84,40 +84,40 @@ export default function ITProcessBusinessPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-              Transform Your IT Career with Industry-Recognized Certifications
+              Master Workplace Skills with Behavioral Training
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Master IT governance, project management, and digital transformation with our expert-led programs
+              Enhance communication, emotional intelligence, and teamwork to thrive in any professional environment.
             </p>
             <Button
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0"
             >
-              Explore Certification Paths
+              Explore Training Programs
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Certification Categories */}
+      {/* Behavioral Training Categories */}
       <section className="relative z-10 py-24 bg-black/50 backdrop-blur-sm">
         <div className="container mx-auto px-4">
-          <SectionHeader title="IT Service Management & Governance" colorClass="cyan" id="it-service-management" />
+          <SectionHeader title="Behavioral Training Programs" colorClass="cyan" id="behavioral-training" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {/* ITIL 4 */}
+            {/* Communication Skills */}
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
               <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                ITIL 4 Certification Path
+                Communication Skills
               </h4>
               <p className="text-gray-400 mb-4">
-                Master the world's leading framework for IT service management and digital transformation.
+                Develop effective communication strategies for workplace success.
               </p>
               <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>ITIL 4 Foundation</li>
-                <li>ITIL 4 Specialist Modules</li>
-                <li>ITIL 4 Strategist</li>
-                <li>ITIL 4 Leader</li>
+                <li>Business Communication</li>
+                <li>Public Speaking</li>
+                <li>Email & Virtual Communication</li>
+                <li>Active Listening</li>
               </ul>
               <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
                 Learn More
@@ -133,18 +133,19 @@ export default function ITProcessBusinessPage() {
               </Link>
             </div>
 
-            {/* COBIT */}
+            {/* Emotional Intelligence */}
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
               <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                COBIT Certification Path
+                Emotional Intelligence
               </h4>
               <p className="text-gray-400 mb-4">
-                Develop expertise in IT governance and enterprise IT management with COBIT.
+                Build self-awareness, empathy, and resilience for personal and professional growth.
               </p>
               <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>COBIT Foundation</li>
-                <li>COBIT Design & Implementation</li>
-                <li>COBIT Assessor</li>
+                <li>Emotional Intelligence (EQ)</li>
+                <li>Stress & Time Management</li>
+                <li>Mindfulness & Resilience</li>
+                <li>Self-Motivation</li>
               </ul>
               <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
                 Learn More
@@ -160,107 +161,19 @@ export default function ITProcessBusinessPage() {
               </Link>
             </div>
 
-            {/* ISO 20000 */}
+            {/* Collaboration & Teamwork */}
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
               <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                ISO 20000 Certification Path
-              </h4>
-              <p className="text-gray-400 mb-4">Learn the international standard for IT service management systems.</p>
-              <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>ISO 20000 Foundation</li>
-                <li>ISO 20000 Practitioner</li>
-                <li>ISO 20000 Auditor</li>
-              </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Project & Program Management Section */}
-      <section className="relative z-10 py-24" id="project-management">
-        <div className="container mx-auto px-4">
-          <SectionHeader title="Project & Program Management" colorClass="cyan" id="project-management" />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {/* PRINCE2 */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
-              <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                PRINCE2 Certification Path
-              </h4>
-              <p className="text-gray-400 mb-4">Master the world's most widely adopted project management method.</p>
-              <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>PRINCE2 Foundation</li>
-                <li>PRINCE2 Practitioner</li>
-                <li>PRINCE2 Agile® Foundation</li>
-                <li>PRINCE2 Agile® Practitioner</li>
-              </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-
-            {/* PMP */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
-              <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                PMP Certification Program
+                Collaboration & Teamwork
               </h4>
               <p className="text-gray-400 mb-4">
-                Prepare for the globally recognized Project Management Professional certification.
+                Foster teamwork and cross-cultural communication for a harmonious workplace.
               </p>
               <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>PMP Exam Preparation</li>
-                <li>35 Contact Hours Certificate</li>
-                <li>Practice Exams & Simulations</li>
-                <li>Application Assistance</li>
-              </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-
-            {/* SAFe */}
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800 hover:border-cyan-500 transition-all group">
-              <h4 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
-                SAFe Certification Path
-              </h4>
-              <p className="text-gray-400 mb-4">
-                Learn the Scaled Agile Framework for enterprise-scale agile development.
-              </p>
-              <ul className="text-gray-400 space-y-1 mb-4 list-disc pl-5">
-                <li>SAFe Agilist (Leading SAFe)</li>
-                <li>SAFe Scrum Master</li>
-                <li>SAFe Product Owner/Manager</li>
-                <li>SAFe Advanced Scrum Master</li>
+                <li>Effective Teamwork</li>
+                <li>Cross-cultural Communication</li>
+                <li>Workplace Etiquette</li>
+                <li>Influencing & Negotiation Skills</li>
               </ul>
               <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
                 Learn More
@@ -282,35 +195,34 @@ export default function ITProcessBusinessPage() {
       {/* Why Choose Our Programs */}
       <section className="relative z-10 py-16 bg-black/50 backdrop-blur-sm">
         <div className="container mx-auto px-4">
-          <h3 className="text-2xl font-bold mb-8 text-center text-cyan-400">Why Choose Our Programs?</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center text-cyan-400">Why Choose Our Behavioral Training?</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800">
-              <h4 className="text-lg font-bold mb-3 text-white">Accredited Training</h4>
+              <h4 className="text-lg font-bold mb-3 text-white">Expert Trainers</h4>
               <p className="text-gray-400">
-                All our courses are delivered by accredited training partners recognized by official certification
-                bodies.
+                Learn from certified professionals with extensive experience in behavioral training.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800">
-              <h4 className="text-lg font-bold mb-3 text-white">Expert Instructors</h4>
+              <h4 className="text-lg font-bold mb-3 text-white">Practical Approach</h4>
               <p className="text-gray-400">
-                Learn from certified professionals with extensive real-world experience in their respective fields.
+                Our training focuses on real-world applications and actionable insights.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800">
-              <h4 className="text-lg font-bold mb-3 text-white">Flexible Learning</h4>
+              <h4 className="text-lg font-bold mb-3 text-white">Customizable Programs</h4>
               <p className="text-gray-400">
-                Choose from in-person, virtual, or self-paced learning options to fit your schedule and preferences.
+                Tailored training solutions to meet the unique needs of your organization.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-800">
-              <h4 className="text-lg font-bold mb-3 text-white">Career Support</h4>
+              <h4 className="text-lg font-bold mb-3 text-white">Proven Results</h4>
               <p className="text-gray-400">
-                Receive guidance on certification paths, career planning, and job opportunities in your field.
+                Our programs have helped thousands of professionals enhance their workplace skills.
               </p>
             </div>
           </div>
@@ -321,9 +233,9 @@ export default function ITProcessBusinessPage() {
       <section className="relative z-10 py-16">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto bg-gradient-to-r from-gray-900 to-gray-800 p-8 md:p-12 rounded-2xl border border-gray-800">
-            <h2 className="text-3xl font-bold mb-4 text-white">Ready to certify your skills?</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white">Ready to transform your workplace skills?</h2>
             <p className="text-gray-300 mb-8">
-              Take the first step toward advancing your career with our industry-recognized certification programs.
+              Take the first step toward personal and professional growth with our Behavioral Training programs.
             </p>
             <Button
               size="lg"
@@ -336,7 +248,7 @@ export default function ITProcessBusinessPage() {
         </div>
       </section>
 
-      {/* Updated FAQ Section */}
+      {/* FAQ Section */}
       <FAQSection
         title="Frequently Asked Questions"
         faqs={faqs}
@@ -344,8 +256,8 @@ export default function ITProcessBusinessPage() {
         titleClassName="text-cyan-400"
         triggerClassName="hover:text-cyan-400"
         viewAllLink={{
-          href: "/faq#it-process-business",
-          text: "View all IT certification FAQs",
+          href: "/faq#behavioral-training",
+          text: "View all behavioral FAQs",
           className: "text-cyan-400 hover:text-cyan-300"
         }}
       />

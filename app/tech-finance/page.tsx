@@ -13,26 +13,31 @@ export default function TechFinancePage() {
   // FAQ data for this section
   const faqs = [
     {
+      id: "tech-finance-1",
       question: "What tech and finance courses do you offer?",
       answer:
         "We offer a wide range of courses including programming languages (Python, Java, JavaScript), cloud computing (AWS, Azure, GCP), DevOps, cybersecurity, financial accounting, investment management, ERP systems (SAP, Oracle), and financial data analysis using tools like Power BI and Tableau.",
     },
     {
+      id: "tech-finance-2",
       question: "Do I need prior experience to enroll in your courses?",
       answer:
         "Our courses cater to various skill levels. While some advanced courses may require prior knowledge, many of our programs are designed for beginners with no previous experience. Each course description clearly indicates the prerequisites, if any.",
     },
     {
+      id: "tech-finance-3",
       question: "How are the courses delivered?",
       answer:
         "We offer flexible learning options including instructor-led virtual classes, in-person training, and self-paced online courses. All options include hands-on labs, practical exercises, and real-world projects to ensure you gain practical experience.",
     },
     {
+      id: "tech-finance-4",
       question: "Do you provide job placement assistance?",
       answer:
         "Yes, we offer job placement assistance for eligible students. This includes resume building, interview preparation, networking opportunities, and connections with our industry partners who are looking to hire skilled professionals.",
     },
     {
+      id: "tech-finance-5",
       question: "Are there any discounts available for multiple courses?",
       answer:
         "Yes, we offer package deals and discounts for students who enroll in multiple courses or learning paths. We also have special rates for corporate training and group enrollments. Contact our admissions team for more details.",
@@ -342,7 +347,18 @@ export default function TechFinancePage() {
       </section>
 
       {/* FAQ Section */}
-      <FAQSection title="Frequently Asked Questions" faqs={faqs} colorClass="purple" linkHref="/faq#tech-finance" />
+      <FAQSection
+  title="Frequently Asked Questions"
+  faqs={faqs}
+  className="py-16 px-4"
+  titleClassName="text-purple-400"
+  triggerClassName="hover:text-purple-400"
+  viewAllLink={{
+    href: "/faq#tech-finance",
+    text: "View all Tech & Finance FAQs",
+    className: "text-purple-400 hover:text-purple-300"
+  }}
+/>
 
       {/* Footer */}
       <footer className="relative z-10 bg-gray-900 border-t border-gray-800 py-8">
