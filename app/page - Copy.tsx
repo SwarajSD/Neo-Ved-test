@@ -127,17 +127,17 @@ export default function LandingPage() {
                 <AccordionContent className="px-4 pb-3">
                   <ul className="space-y-2">
                     <li>
-                      <Link href="/human-capital" className="text-sm text-gray-300 hover:text-cyan-400">
+                      <Link href="/human-capital/behavioral" className="text-sm text-gray-300 hover:text-cyan-400">
                         Behavioral Training
                       </Link>
                     </li>
                     <li>
-                      <Link href="/human-capital" className="text-sm text-gray-300 hover:text-cyan-400">
+                      <Link href="/human-capital/hr-professional" className="text-sm text-gray-300 hover:text-cyan-400">
                         HR Professional Development
                       </Link>
                     </li>
                     <li>
-                      <Link href="/human-capital" className="text-sm text-gray-300 hover:text-cyan-400">
+                      <Link href="/human-capital/leadership-dev" className="text-sm text-gray-300 hover:text-cyan-400">
                         Leadership Development
                       </Link>
                     </li>
@@ -423,7 +423,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/it-process-business" target="_blank">
+                  <Link href="/it-process-business/it-service">
                     <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -482,7 +482,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/it-process-business" target="_blank">
+                  <Link href="/it-process-business/project-program">
                     <Button className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -538,7 +538,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/it-process-business" target="_blank">
+                  <Link href="/it-process-business/quality-process">
                     <Button className="bg-gradient-to-r from-blue-500 to-cyan-600 hover:from-blue-600 hover:to-cyan-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -615,7 +615,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/tech-finance" target="_blank">
+                  <Link href="/tech-finance/it-dev">
                     <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -673,7 +673,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/tech-finance" target="_blank">
+                  <Link href="/tech-finance/fin-ana">
                     <Button className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -750,7 +750,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/human-capital" target="_blank">
+                  <Link href="/human-capital/behavioral">
                     <Button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -806,7 +806,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/human-capital" target="_blank">
+                  <Link href="/human-capital/hr-professional">
                     <Button className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -861,7 +861,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/human-capital" target="_blank">
+                  <Link href="/human-capital/leadership-dev">
                     <Button className="bg-gradient-to-r from-blue-500 to-cyan-600 hover:from-blue-600 hover:to-cyan-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -937,7 +937,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/career-development" target="_blank">
+                  <Link href="/career-development/grad-launch">
                     <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -992,7 +992,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/career-development" target="_blank">
+                  <Link href="/career-development/carr-acc">
                     <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -1048,7 +1048,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/career-development" target="_blank">
+                  <Link href="/career-development/exec-grow">
                     <Button className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -1103,7 +1103,7 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/career-development" target="_blank">
+                  <Link href="/career-development/carr-tran">
                     <Button className="bg-gradient-to-r from-pink-500 to-orange-600 hover:from-pink-600 hover:to-orange-700 text-white">
                       Know More <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
@@ -1136,7 +1136,7 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="https://v0-saas-landing-page-updates.vercel.app/" target="_blank">
+                <Link href="https://v0-saas-landing-page-updates.vercel.app/">
                   <Button className="inline-flex h-10 items-center justify-center rounded-md bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 px-8 text-white border-0">
                     Start Your Journey <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>
@@ -1266,7 +1266,7 @@ export default function LandingPage() {
                   <Globe className="h-5 w-5 text-cyan-400 mt-0.5" />
                   <Link
                     href="https://theneovedaacademy.in/"
-                    target="_blank"
+                    // target="_blank"
                     className="text-gray-400 hover:text-cyan-400"
                   >
                     theneovedaacademy.in

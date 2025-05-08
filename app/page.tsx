@@ -146,29 +146,49 @@ export default function LandingPage() {
               </AccordionItem>
 
               <AccordionItem value="career-development" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  Career Development Packages
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/career-development" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Graduate Launch Package
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/career-development" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Career Accelerator Package
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/career-development" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Executive Growth Package
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
+  <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
+    Career Development Packages
+  </AccordionTrigger>
+  <AccordionContent className="px-4 pb-3">
+    <ul className="space-y-2">
+      <li>
+        <Link href="/job-market-readiness" className="text-sm text-gray-300 hover:text-cyan-400">
+          Job Market Readiness
+        </Link>
+      </li>
+      <li>
+        <Link href="/executive-growth" className="text-sm text-gray-300 hover:text-cyan-400">
+          Executive Growth
+        </Link>
+      </li>
+      <li>
+        <Link href="/industry-transition" className="text-sm text-gray-300 hover:text-cyan-400">
+          Industry Transition
+        </Link>
+      </li>
+      <li>
+        <Link href="/back-to-work" className="text-sm text-gray-300 hover:text-cyan-400">
+          Back-to-Work
+        </Link>
+      </li>
+      <li>
+        <Link href="/personal-branding" className="text-sm text-gray-300 hover:text-cyan-400">
+          Personal Branding
+        </Link>
+      </li>
+      <li>
+        <Link href="/digital-upskilling" className="text-sm text-gray-300 hover:text-cyan-400">
+          Digital Upskilling
+        </Link>
+      </li>
+      <li>
+        <Link href="/upskilling-future" className="text-sm text-gray-300 hover:text-cyan-400">
+          Upskilling Future Generations
+        </Link>
+      </li>
+    </ul>
+  </AccordionContent>
+</AccordionItem>
 
               {/* New Accordion Items for the copied folders */}
               <AccordionItem value="consulting" className="border-b border-gray-800">
@@ -872,247 +892,354 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Career Development Packages Section */}
-        <section id="career-development" className="w-full py-12 md:py-24 lg:py-32 bg-gray-900/50 relative">
-          <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-cyan-600/20 rounded-full blur-3xl -z-10"></div>
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-gray-800/60 px-3 py-1 text-sm text-gray-300">
-                  Featured Programs
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
-                  Career Development Packages
-                </h2>
-                <p className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Tailored programs for every career stage - from students to executives.
-                </p>
-              </div>
-            </div>
+{/* Career Development Packages Section */}
+<section id="career-development" className="w-full py-12 md:py-24 lg:py-32 bg-gray-900/50 relative">
+  <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-cyan-600/20 rounded-full blur-3xl -z-10"></div>
+  <div className="container px-4 md:px-6">
+    <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+      <div className="space-y-2">
+        <div className="inline-block rounded-lg bg-gray-800/60 px-3 py-1 text-sm text-gray-300">
+          Career Development Packages
+        </div>
+        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+          Tailored Career Solutions
+        </h2>
+        <p className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Specialized programs designed for every career stage and transition need.
+        </p>
+      </div>
+    </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-              {/* Graduate Launch Package */}
-              <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 transition-all overflow-hidden">
-                <div className="relative h-48">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-600/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-5xl text-cyan-400">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="64"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-100">Graduate Launch Package</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-400">
-                    Kickstart your career with essential skills and tools for new graduates.
-                  </p>
-                  <ul className="mt-4 space-y-2">
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Resume optimization</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Interview preparation</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Entry-level certification</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Link href="/career-development/grad-launch">
-                    <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white">
-                      Know More <ExternalLink className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-
-              {/* Career Accelerator Package */}
-              <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 transition-all overflow-hidden">
-                <div className="relative h-48">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-5xl text-blue-400">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="64"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M13 22H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4"></path>
-                        <polyline points="9 17 12 14 15 17"></polyline>
-                        <path d="M12 14v8"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-100">Career Accelerator Package</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-400">
-                    Take your mid-career to the next level with advanced skills and leadership training.
-                  </p>
-                  <ul className="mt-4 space-y-2">
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Leadership training</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Technical upskilling</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Promotion strategy</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Link href="/career-development/carr-acc">
-                    <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white">
-                      Know More <ExternalLink className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-
-              {/* Executive Growth Package */}
-              <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 transition-all overflow-hidden">
-                <div className="relative h-48">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-600/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-5xl text-purple-400">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="64"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M20 7h-9"></path>
-                        <path d="M14 17H5"></path>
-                        <circle cx="17" cy="17" r="3"></circle>
-                        <circle cx="7" cy="7" r="3"></circle>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-100">Executive Growth Package</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-400">
-                    Enhance your executive presence and strategic leadership capabilities.
-                  </p>
-                  <ul className="mt-4 space-y-2">
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Digital transformation skills</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Strategic leadership</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Boardroom readiness</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Link href="/career-development/exec-grow">
-                    <Button className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white">
-                      Know More <ExternalLink className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-
-              {/* Career Transition Package */}
-              <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 transition-all overflow-hidden">
-                <div className="relative h-48">
-                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-orange-600/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-5xl text-pink-400">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="64"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M18 8L22 12L18 16"></path>
-                        <path d="M2 12H22"></path>
-                        <path d="M6 8L2 12L6 16"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-100">Career Transition Package</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-400">
-                    Navigate career changes with confidence through targeted skills development.
-                  </p>
-                  <ul className="mt-4 space-y-2">
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-pink-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Skills gap analysis</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-pink-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Certification pathways</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="h-5 w-5 text-pink-400 mr-2 mt-0.5" />
-                      <span className="text-gray-300">Industry networking</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Link href="/career-development/carr-tran">
-                    <Button className="bg-gradient-to-r from-pink-500 to-orange-600 hover:from-pink-600 hover:to-orange-700 text-white">
-                      Know More <ExternalLink className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {/* Job Market Readiness Package - Cyan */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 transition-all overflow-hidden flex flex-col h-full">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-cyan-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5l2 2h8a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="2"></circle>
+                <line x1="12" y1="15" x2="12" y2="18"></line>
+              </svg>
             </div>
           </div>
-        </section>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">Job Market Readiness</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-gray-400">
+            For final year students and freshers applying for jobs.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">ATS Optimized Resume</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">LinkedIn Profile Makeover</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Interview Preparation</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter className="flex-col items-start gap-2 mt-auto">
+          <div className="text-sm text-gray-300">Price: ₹2499/-</div>
+          <Link href="sevenopp\job-mar" className="w-full">
+            <Button className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+
+      {/* Executive Growth Package - Purple */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all overflow-hidden flex flex-col h-full">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-fuchsia-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-purple-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">Executive Growth</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-gray-400">
+            For ambitious professionals with less than 5 years experience.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Career Health Check</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Pivot Potential Assessment</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Future-Proofing Roadmap</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter className="flex-col items-start gap-2 mt-auto">
+          <div className="text-sm text-gray-300">Price: ₹4999/-</div>
+          <Link href="sevenopp\exec-grow" className="w-full">
+            <Button className="w-full bg-gradient-to-r from-purple-500 to-fuchsia-600 hover:from-purple-600 hover:to-fuchsia-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+
+      {/* Industry Transition Package - Blue */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-blue-500/50 transition-all overflow-hidden flex flex-col h-full">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-indigo-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-blue-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">Industry Transition</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-gray-400">
+            For professionals transitioning between different fields.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Custom Transition Roadmap</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Transferable Skills Mapping</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Resume & LinkedIn Overhaul</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter className="flex-col items-start gap-2 mt-auto">
+          <div className="text-sm text-gray-300">Price: ₹5999/-</div>
+          <Link href="sevenopp\indus-trans" className="w-full">
+            <Button className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+
+      {/* Back-to-Work Package - Pink */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-pink-500/50 transition-all overflow-hidden flex flex-col h-full">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-rose-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-pink-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                <path d="M18 16h-4l-2 3-2-3H6"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">Back-to-Work</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-gray-400">
+            For professionals returning after a career break.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-pink-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Confidence Rebuilding</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-pink-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Job Market Re-Entry Strategy</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-pink-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Technical Upskilling</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter className="flex-col items-start gap-2 mt-auto">
+          <div className="text-sm text-gray-300">Price: ₹5999/-</div>
+          <Link href="sevenopp\back-to-work" className="w-full">
+            <Button className="w-full bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+
+      {/* Personal Branding Package - Green */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-green-500/50 transition-all overflow-hidden flex flex-col h-full">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-10 0z"></path>
+                <path d="M16.5 16.5a9 9 0 1 0-9-9"></path>
+                <path d="M12 12v9"></path>
+                <path d="M15 12h6"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">Personal Branding</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-gray-400">
+            For corporate professionals, freelancers, and entrepreneurs.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-green-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">High Impact Personal Brand</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-green-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">LinkedIn Optimization</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-green-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Consulting Skills</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter className="flex-col items-start gap-2 mt-auto">
+          <div className="text-sm text-gray-300">Price: ₹5999/-</div>
+          <Link href="sevenopp\person-brand" className="w-full">
+            <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+
+      {/* Digital Upskilling Package - Yellow */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-yellow-500/50 transition-all overflow-hidden flex flex-col h-full">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-amber-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-yellow-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                <circle cx="12" cy="8" r="2"></circle>
+                <path d="M15 13a3 3 0 1 0-6 0"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">Digital Upskilling</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-gray-400">
+            For workers transitioning to white-collar digital roles.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-yellow-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Digital Tools Mastery</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-yellow-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Role-Specific Training</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-yellow-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Workplace Communication</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter className="flex-col items-start gap-2 mt-auto">
+          <div className="text-sm text-gray-300">Price: ₹2499/-</div>
+          <Link href="sevenopp\digi-upskill" className="w-full">
+            <Button className="w-full bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+
+      {/* Upskilling Future Generations Package - Orange */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-orange-500/50 transition-all overflow-hidden flex flex-col h-full">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-orange-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                <path d="M8.5 8.5v.01"></path>
+                <path d="M16 15.5v.01"></path>
+                <path d="M12 12v.01"></path>
+                <path d="M11 17v.01"></path>
+                <path d="M7 14v.01"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">Upskilling Future Generations</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-gray-400">
+            For kids (8+) and parents to learn AI fundamentals together.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-orange-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Foundational AI Literacy</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-orange-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Critical Thinking Skills</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-orange-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Interactive Learning</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter className="flex-col items-start gap-2 mt-auto">
+          <div className="text-sm text-gray-300">Price: ₹5999/-</div>
+          <Link href="sevenopp\upskill-fut" className="w-full">
+            <Button className="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+    </div>
+  </div>
+</section>
 
         {/* About Section */}
         <AboutSection />
