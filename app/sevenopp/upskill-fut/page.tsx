@@ -328,6 +328,39 @@ export default function FutureGenerationsPage() {
         </div>
       </section>
 
+      <section className="py-12 px-4 bg-black text-white">
+  <SectionHeader
+    subtitle="Pricing"
+    title="Individual Product Pricing"
+    description="Choose the service that fits your re-entry journey."
+  />
+
+  <div className="max-w-md mx-auto overflow-x-auto">
+    <table className="table-auto border border-white w-full text-left text-sm">
+      <thead>
+        <tr>
+          <th className="border border-white px-4 py-2 font-semibold">INDIVIDUAL PRODUCT</th>
+          <th className="border border-white px-4 py-2 font-semibold">PRICE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td className="border border-white px-4 py-2">Computational Thinking: Neural networks, Pattern recognition and Generative AI tools.</td>
+          <td className="border border-white px-4 py-2">Rs.2499/-</td>
+        </tr>
+        <tr>
+          <td className="border border-white px-4 py-2">Building blocks of AI: Machine Learning, Pattern Recognition and Algorithm.</td>
+          <td className="border border-white px-4 py-2">Rs.2499/- / Rs.4999/-</td>
+        </tr>
+        <tr>
+          <td className="border border-white px-4 py-2">Supervised tech exploration & facilitation of critical thinking discussions.</td>
+          <td className="border border-white px-4 py-2">Rs.4999/-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
       {/* CTA Section */}
       <section className="relative z-10 py-16">
         <div className="container mx-auto px-4 text-center">
