@@ -17,7 +17,7 @@ export default function LandingPage() {
   const [registrationOpen, setRegistrationOpen] = useState(false)
 
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-gray-950 to-gray-900 text-gray-50">
+    <div className="flex min-h-screen flex-col bg-gradient-to-b from-gray-950 to-gray-900 text-gray-50 overflow-x-hidden">
       {/* Animated Background */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
@@ -26,29 +26,35 @@ export default function LandingPage() {
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b border-gray-800 bg-gray-950/80 backdrop-blur supports-[backdrop-filter]:bg-gray-950/60">
-        <div className="container flex h-16 items-center justify-between py-4">
-          <div className="flex items-center gap-2">
-            <Link href="/">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DALL%C2%B7E%202025-03-04%2022.06.43%20-%20A%20futuristic%2C%20minimalist%20logo%20for%20%27The%20Neo%20Veda%20Academy%27.%20The%20design%20features%20sleek%2C%20modern%20typography%20with%20a%20glowing%20ambient%20blur%20effect.%20The%20color%20p.jpg-u5KPrysR5mjA8ySlPXVK1WJYI1mmH4.jpeg"
-                alt="The Neo Veda Academy Logo"
-                width={40}
-                height={40}
-                className="rounded-full"
-              />
-            </Link>
-            <Link href="/">
-              <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
-                The Neo Veda Academy
-              </span>
-            </Link>
-          </div>
-          <div className="hidden md:flex items-center gap-6">
-            <NavMenu />
-          </div>
-          <div className="flex items-center gap-4">
-            {/* Mobile Menu */}
+{/* Header */}
+{/* Header */}
+<header className="sticky top-0 z-40 w-full border-b border-gray-800 bg-gray-950/80 backdrop-blur supports-[backdrop-filter]:bg-gray-950/60">
+  {/* The main container should use `flex` and `gap` to space items correctly */}
+  <div className="container flex h-16 items-center py-4 gap-8"> {/* Adjusted: Removed justify-between, added gap-8 */}
+
+    {/* Logo and Title */}
+    <div className="flex items-center gap-2">
+      <Link href="/" className="flex items-center gap-2">
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DALL%C2%B7E%202025-03-04%2022.06.43%20-%20A%20futuristic%2C%20minimalist%20logo%20for%20%27The%20Neo%20Veda%20Academy%27.%20The%20design%20features%20sleek%2C%20modern%20typography%20with%20a%20glowing%20ambient%20blur%20effect.%20The%20color%20p.jpg-u5KPrysR5mjA8ySlPXVK1WJYI1mmH4.jpeg"
+          alt="The Neo Veda Academy Logo"
+          width={40}
+          height={40}
+          className="rounded-full"
+        />
+        <span className="text-xl font-bold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
+          The Neo Veda Academy
+        </span>
+      </Link>
+    </div>
+
+    {/* Navigation Menu (desktop) */}
+    <div className="hidden md:flex items-center space-x-6 ml-auto"> {/* Added ml-auto and space-x-6 */}
+      <NavMenu />
+    </div>
+
+    {/* Mobile Menu Trigger */}
+          <div className="flex items-center md:ml-6">
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden border-gray-700 text-gray-300">
@@ -67,241 +73,195 @@ export default function LandingPage() {
                         height={30}
                         className="rounded-full"
                       />
-                      <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
+                      <span className="text-lg font-bold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
                         The Neo Veda Academy
                       </span>
                     </div>
                   </div>
                   <div className="flex-1 overflow-auto py-2">
-            <Accordion type="single" collapsible className="w-full">
-              {/* Existing Accordion Items */}
-              <AccordionItem value="it-process-business" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  IT Process & Business Certifications
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/it-process-business" className="text-sm text-gray-300 hover:text-cyan-400">
-                        ITIL & Service Management
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/it-process-business" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Project Management
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/it-process-business" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Quality & Process Improvement
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
+                    <Accordion type="single" collapsible className="w-full">
+                      {/* IT Process & Business Certifications - Updated Sub-options */}
+                      <AccordionItem value="it-process-business" className="border-b border-gray-800">
+                        <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
+                          IT Process & Business Certifications
+                        </AccordionTrigger>
+                        <AccordionContent className="px-4 pb-3">
+                          <ul className="space-y-2">
+                            <li>
+                              <Link href="/it-process-business/it-service" className="text-sm text-gray-300 hover:text-cyan-400">
+                                IT Service Management & Governance
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/it-process-business/project-program" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Project & Program Management
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/it-process-business/quality-process" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Quality & Process Improvement
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/it-process-business/risk-security" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Risk & Security Management
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
 
-              <AccordionItem value="tech-finance" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  Tech & Finance Academy
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/tech-finance" className="text-sm text-gray-300 hover:text-cyan-400">
-                        IT & Development
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/tech-finance" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Finance & Analytics
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
+                      {/* Tech & Finance Academy */}
+                      <AccordionItem value="tech-finance" className="border-b border-gray-800">
+                        <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
+                          Tech & Finance Academy
+                        </AccordionTrigger>
+                        <AccordionContent className="px-4 pb-3">
+                          <ul className="space-y-2">
+                            <li>
+                              <Link href="/tech-finance/it-dev" className="text-sm text-gray-300 hover:text-cyan-400">
+                                IT & Development
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/tech-finance" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Finance & Analytics
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
 
-              <AccordionItem value="human-capital" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  Human Capital & HR Trainings
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/human-capital/behavioral" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Behavioral Training
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/human-capital/hr-professional" className="text-sm text-gray-300 hover:text-cyan-400">
-                        HR Professional Development
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/human-capital/leadership-dev" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Leadership Development
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
+                      {/* Human Capital & HR Trainings - Updated Sub-options */}
+                      <AccordionItem value="human-capital" className="border-b border-gray-800">
+                        <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
+                          Human Capital & HR Trainings
+                        </AccordionTrigger>
+                        <AccordionContent className="px-4 pb-3">
+                          <ul className="space-y-2">
+                            <li>
+                              <Link href="/human-capital/behavioral" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Behavioral Training
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/human-capital/hr-professional" className="text-sm text-gray-300 hover:text-cyan-400">
+                                HR Professional Development
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/human-capital/leadership-dev" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Leadership Development
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
 
-              <AccordionItem value="career-development" className="border-b border-gray-800">
-  <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-    Career Development Packages
-  </AccordionTrigger>
-  <AccordionContent className="px-4 pb-3">
-    <ul className="space-y-2">
-      <li>
-        <Link href="/job-market-readiness" className="text-sm text-gray-300 hover:text-cyan-400">
-          Job Market Readiness
-        </Link>
-      </li>
-      <li>
-        <Link href="/executive-growth" className="text-sm text-gray-300 hover:text-cyan-400">
-          Executive Growth
-        </Link>
-      </li>
-      <li>
-        <Link href="/industry-transition" className="text-sm text-gray-300 hover:text-cyan-400">
-          Industry Transition
-        </Link>
-      </li>
-      <li>
-        <Link href="/back-to-work" className="text-sm text-gray-300 hover:text-cyan-400">
-          Back-to-Work
-        </Link>
-      </li>
-      <li>
-        <Link href="/personal-branding" className="text-sm text-gray-300 hover:text-cyan-400">
-          Personal Branding
-        </Link>
-      </li>
-      <li>
-        <Link href="/digital-upskilling" className="text-sm text-gray-300 hover:text-cyan-400">
-          Digital Upskilling
-        </Link>
-      </li>
-      <li>
-        <Link href="/upskilling-future" className="text-sm text-gray-300 hover:text-cyan-400">
-          Upskilling Future Generations
-        </Link>
-      </li>
-    </ul>
-  </AccordionContent>
-</AccordionItem>
+                      {/* Corporate Gen AI Training */}
+                      <AccordionItem value="corporate-gen-ai-training" className="border-b border-gray-800">
+                        <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
+                          Corporate Gen AI Training
+                        </AccordionTrigger>
+                        <AccordionContent className="px-4 pb-3">
+                          <ul className="space-y-2">
+                            <li>
+                              <Link href="/corporate-gen-ai/about" className="text-sm text-gray-300 hover:text-cyan-400">
+                                About Gen AI Training
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/corporate-gen-ai/training" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Training Programs
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/corporate-gen-ai/workshop" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Workshops
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/corporate-gen-ai/experience" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Experience
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
 
-              {/* New Accordion Items for the copied folders */}
-              <AccordionItem value="consulting" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  Consulting
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/consulting" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Explore Consulting
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
+                      {/* Career Development Packages - Updated Sub-options */}
+                      <AccordionItem value="career-development" className="border-b border-gray-800">
+                        <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
+                          Career Development Packages
+                        </AccordionTrigger>
+                        <AccordionContent className="px-4 pb-3">
+                          <ul className="space-y-2">
+                            <li>
+                              <Link href="/career-development/grad-launch" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Graduate Launch Package
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/career-development/carr-acc" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Career Accelerator Package
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/career-development/exec-grow" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Executive Growth Package
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/career-development/carr-tran" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Career Transition Package
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
 
-              <AccordionItem value="faq" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  FAQ
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/faq" className="text-sm text-gray-300 hover:text-cyan-400">
-                        View FAQs
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
+                      {/* About Us - Updated Sub-options */}
+                      <AccordionItem value="about" className="border-b border-gray-800">
+                        <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
+                          About Us
+                        </AccordionTrigger>
+                        <AccordionContent className="px-4 pb-3">
+                          <ul className="space-y-2">
+                            <li>
+                              <Link href="#mission" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Mission
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#vision" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Vision
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#approach" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Our Approach
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="#team" className="text-sm text-gray-300 hover:text-cyan-400">
+                                Our Team
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
 
-              <AccordionItem value="it-training" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  IT Training
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/it-training" className="text-sm text-gray-300 hover:text-cyan-400">
-                        See IT Training Programs
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
+                      {/* Removed the following AccordionItems to align with desktop menu:
+                          - Consulting
+                          - FAQ
+                          - IT Training
+                          - SATH
+                          - Technical Training
+                          - Technology
+                      */}
 
-              <AccordionItem value="sath" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  SATH
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/sath" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Learn About SATH
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="technical-training" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  Technical Training
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/technical-training" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Explore Technical Training
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="technology" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  Technology
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="/technology" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Discover Technology Insights
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="about" className="border-b border-gray-800">
-                <AccordionTrigger className="px-4 py-3 text-gray-100 hover:text-cyan-400">
-                  About Us
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-3">
-                  <ul className="space-y-2">
-                    <li>
-                      <Link href="#mission" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Our Mission
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#team" className="text-sm text-gray-300 hover:text-cyan-400">
-                        Our Team
-                      </Link>
-                    </li>
-                  </ul>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
+                    </Accordion>
+                  </div>
                   <div className="p-4 border-t border-gray-800">
                     <div className="flex gap-4 justify-center">
                       <Link href="#" className="text-gray-500 hover:text-cyan-400">
@@ -341,7 +301,7 @@ export default function LandingPage() {
                   <span>Where passion meets excellence</span>
                 </div>
                 <div className="space-y-2">
-                  <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
+                  <h1 className="text-2xl font-bold whitespace-nowrap tracking-tighter sm:text-4xl xl:text-5xl/none bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
                     Elevate Your Skills with AI-Powered Learning
                   </h1>
                   <p className="max-w-[500px] text-gray-400 text-sm md:text-base">
@@ -892,6 +852,194 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* Corporate AI Training Section */}
+<section id="ai-training" className="w-full py-12 md:py-24 lg:py-32 relative">
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/3 h-1/2 bg-purple-600/20 rounded-full blur-3xl -z-10"></div>
+  <div className="container px-4 md:px-6">
+    <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      <div className="space-y-2">
+        <div className="inline-block rounded-lg bg-gray-800/60 px-3 py-1 text-sm text-gray-300">
+          Cutting-Edge Programs
+        </div>
+        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
+          Corporate AI Training Programs
+        </h2>
+        <p className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Transform your workforce with AI-powered solutions and next-generation digital skills.
+        </p>
+      </div>
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-3 mt-12">
+      {/* AI Fundamentals */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-purple-500/50 transition-all overflow-hidden">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-purple-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                <path d="M12 12v9"></path>
+                <path d="m8 17 4 4 4-4"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">AI Fundamentals</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-gray-400">
+            Master the core concepts of artificial intelligence and machine learning for business applications.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">AI Concepts & Terminology</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Machine Learning Basics</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-purple-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Business Use Cases</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter>
+          <Link href="https://v0-neon-ai-portfolio.vercel.app/">
+            <Button className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+
+      {/* Generative AI */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-blue-500/50 transition-all overflow-hidden">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-blue-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                <path d="M15 5l3 3"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">Generative AI</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-gray-400">
+            Harness the power of generative AI for content creation, design, and business innovation.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Text Generation (LLMs)</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Image & Video Generation</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-blue-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Workflow Automation</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter>
+          <Link href="https://v0-neon-ai-portfolio.vercel.app/">
+            <Button className="bg-gradient-to-r from-blue-500 to-cyan-600 hover:from-blue-600 hover:to-cyan-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+
+      {/* AI Implementation */}
+      <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 transition-all overflow-hidden">
+        <div className="relative h-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-emerald-600/20"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-5xl text-cyan-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+                <path d="M12 13v-1"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl text-gray-100">AI Implementation</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-gray-400">
+            Practical strategies for integrating AI solutions into your existing business infrastructure.
+          </p>
+          <ul className="mt-4 space-y-2">
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">AI Deployment Frameworks</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Ethical Considerations</span>
+            </li>
+            <li className="flex items-start">
+              <Check className="h-5 w-5 text-cyan-400 mr-2 mt-0.5" />
+              <span className="text-gray-300">Change Management</span>
+            </li>
+          </ul>
+        </CardContent>
+        <CardFooter>
+          <Link href="https://v0-neon-ai-portfolio.vercel.app/">
+            <Button className="bg-gradient-to-r from-cyan-500 to-emerald-600 hover:from-cyan-600 hover:to-emerald-700 text-white">
+              Know More <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </CardFooter>
+      </Card>
+    </div>
+  </div>
+</section>
+
 {/* Career Development Packages Section */}
 <section id="career-development" className="w-full py-12 md:py-24 lg:py-32 bg-gray-900/50 relative">
   <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-cyan-600/20 rounded-full blur-3xl -z-10"></div>
@@ -1296,7 +1444,7 @@ export default function LandingPage() {
                   height={40}
                   className="rounded-full"
                 />
-                <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
+                <span className="text-xl font-bold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500">
                   The Neo Veda Academy
                 </span>
               </div>

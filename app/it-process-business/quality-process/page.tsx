@@ -117,18 +117,6 @@ export default function QualityAndProcessImprovementPage() {
                 <li>Six Sigma Black Belt</li>
                 <li>Six Sigma Master Black Belt</li>
               </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* Lean Six Sigma */}
@@ -141,18 +129,6 @@ export default function QualityAndProcessImprovementPage() {
                 <li>Lean Six Sigma Green Belt</li>
                 <li>Lean Six Sigma Black Belt</li>
               </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* Kaizen */}
@@ -165,18 +141,6 @@ export default function QualityAndProcessImprovementPage() {
                 <li>Kaizen Foundation</li>
                 <li>Kaizen Practitioner</li>
               </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* CMMI */}
@@ -189,18 +153,6 @@ export default function QualityAndProcessImprovementPage() {
                 <li>CMMI Foundation</li>
                 <li>CMMI Assessor</li>
               </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* ISO 9001 */}
@@ -213,18 +165,6 @@ export default function QualityAndProcessImprovementPage() {
                 <li>ISO 9001 Foundation</li>
                 <li>ISO 9001 Lead Auditor</li>
               </ul>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>

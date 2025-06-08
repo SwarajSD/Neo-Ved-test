@@ -127,12 +127,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Project organization structure</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* PRINCE2 Practitioner */}
@@ -152,12 +146,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Controlling project stages</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* PRINCE2 Agile */}
@@ -177,12 +165,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Blending frameworks</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
@@ -215,12 +197,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Application assistance</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* PMI-ACP */}
@@ -240,12 +216,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Extreme Programming (XP)</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* CAPM */}
@@ -265,12 +235,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Preparing for future PMP</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
@@ -303,12 +267,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Lean portfolio management</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* SAFe Scrum Master */}
@@ -328,12 +286,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Removing impediments</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* SAFe Product Owner */}
@@ -353,12 +305,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Stakeholder collaboration</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
@@ -391,12 +337,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Practical Scrum techniques</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* PSM */}
@@ -415,12 +355,6 @@ export default function ProjectProgramManagementPage() {
                   <li>PSM III (Expert)</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* AgilePM */}
@@ -439,12 +373,6 @@ export default function ProjectProgramManagementPage() {
                   <li>Agile Business Analysis</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>

@@ -114,6 +114,38 @@ export function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
+        {/* Corporate Gen AI Training - Know More Link Updated */}
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="bg-transparent text-gray-300 hover:text-cyan-400 hover:bg-gray-800">
+            Corporate Gen AI Training
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <div className="w-[400px] p-4 bg-gray-950/80 backdrop-blur-md border border-gray-800 transition-all duration-200 ease-in-out">
+              <div>
+                <h3 className="text-lg font-medium text-cyan-400 mb-3">Corporate Gen AI Training</h3>
+                <p className="text-sm text-gray-400 mb-4">
+                  Empower your workforce with comprehensive Generative AI skills and strategies.
+                </p>
+                <ul className="grid gap-3">
+                  <ListItem title="About Gen AI Training" href="/corporate-gen-ai/about" />
+                  <ListItem title="Training Programs" href="/corporate-gen-ai/training" />
+                  <ListItem title="Workshops" href="/corporate-gen-ai/workshop" />
+                  <ListItem title="Client Experience" href="/corporate-gen-ai/experience" />
+                </ul>
+                <div className="mt-4 pt-4 border-t border-gray-800">
+                  <Link
+                    href="https://v0-neon-ai-portfolio.vercel.app/" // Updated href to the new website
+                    className="text-sm text-cyan-400 hover:text-cyan-300 flex items-center"
+                  >
+                    Know More
+                    <ExternalLink className="ml-1 h-3 w-3" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
         {/* Career Development Packages */}
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent text-gray-300 hover:text-cyan-400 hover:bg-gray-800">

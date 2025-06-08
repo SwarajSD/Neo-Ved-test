@@ -127,12 +127,6 @@ export default function ITServiceManagementPage() {
                   <li>Service value chain</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* ITIL 4 Specialist Modules */}
@@ -152,12 +146,6 @@ export default function ITServiceManagementPage() {
                   <li>Direct, Plan & Improve (Strategist)</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* ITIL 4 Leader */}
@@ -177,12 +165,6 @@ export default function ITServiceManagementPage() {
                   <li>Emerging technologies impact</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
@@ -215,12 +197,6 @@ export default function ITServiceManagementPage() {
                   <li>Design factors</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* COBIT Design & Implementation */}
@@ -240,12 +216,6 @@ export default function ITServiceManagementPage() {
                   <li>Performance measurement</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* COBIT Assessor */}
@@ -265,12 +235,6 @@ export default function ITServiceManagementPage() {
                   <li>Improvement planning</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
@@ -303,12 +267,6 @@ export default function ITServiceManagementPage() {
                   <li>Certification process</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* ISO 20000 Practitioner */}
@@ -328,12 +286,6 @@ export default function ITServiceManagementPage() {
                   <li>Continual improvement</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* ISO 20000 Auditor */}
@@ -353,12 +305,6 @@ export default function ITServiceManagementPage() {
                   <li>Audit reporting</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
@@ -389,12 +335,6 @@ export default function ITServiceManagementPage() {
                   <li>TOGAF Certified (Level 2)</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* SIAM */}
@@ -413,12 +353,6 @@ export default function ITServiceManagementPage() {
                   <li>Service Integration Manager</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
 
             {/* IT4IT */}
@@ -436,12 +370,6 @@ export default function ITServiceManagementPage() {
                   <li>IT4IT Practitioner</li>
                 </ul>
               </div>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 inline-flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
