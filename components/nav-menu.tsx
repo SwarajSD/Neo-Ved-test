@@ -163,6 +163,8 @@ export function NavMenu() {
                   <ListItem title="Career Accelerator Package" href="/career-development/carr-acc" />
                   <ListItem title="Executive Growth Package" href="/career-development/exec-grow" />
                   <ListItem title="Career Transition Package" href="/career-development/carr-tran" />
+                  {/* NEW ELEMENT ADDED HERE */}
+                  <ListItem title="Digital Upskilling Package" href="/career-development/digital-upskill" />
                 </ul>
                 <div className="mt-4 pt-4 border-t border-gray-800">
                   <Link
